@@ -8,7 +8,7 @@
 * MARIA JULIA
 * ANA
 * LETICIA
-* MICHAEL
+* MAICOM
 
 ## 🚀 Tecnologias
 * Python (Flask)
