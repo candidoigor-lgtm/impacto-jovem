@@ -1,7 +1,7 @@
 # Projeto Integrador
 
 ## 👥 Colaboradores
-* Lista de participantes do grupo
+igor, gabriel terra, david, ana julia, maria julia, ana, leticia
 
 ## 🚀 Tecnologias
 * Python (Flask)
