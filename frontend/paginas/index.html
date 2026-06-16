@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Integrador</title>
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Projeto Integrador</h1>
+        <nav><a href="sobre.html">Sobre</a></nav>
+    </header>
+    <main>
+        <section id="app">
+            <p>Carregando dados do backend...</p>
+        </section>
+    </main>
+    <script>
+        // Consumindo a API do Backend
+        fetch('http://127.0.0')
+            .then(res => res.json())
+            .then(data => document.getElementById('app').innerText = data.status)
+            .catch(() => document.getElementById('app').innerText = "Erro ao conectar ao backend.");
+    </script>
+</body>
+</html>
