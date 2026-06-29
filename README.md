@@ -33,13 +33,7 @@ Uma combinação moderna de ferramentas robustas para processamento e interfaces
 
 ---
 
-## 📂 Estrutura do Repositório
-A árvore de diretórios foi planejada para isolar responsabilidades e facilitar o deploy:
 
-```text
-├── 📂 backend      # Módulo do servidor Flask e regras do Chatbot
-├── 📂 frontend     # Páginas Web, estilos visuais e Dashboard
-└── 📄 README.md    # Documentação principal do projeto
 ```
 
 ---
