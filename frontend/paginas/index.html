@@ -2,25 +2,42 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>impacto jovem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Jovem - Home</title>
     <link rel="stylesheet" href="../css/base.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo ao impaacto jovem </h1>
-        <nav><a href="sobre.html">Sobre</a></nav>
+    <header class="main-header">
+        <div class="logo">🚀 Impacto Jovem</div>
+        <nav>
+            <a href="index.html" class="active">Início</a>
+            <a href="sobre.html">Sobre a Equipe</a>
+        </nav>
     </header>
-    <main>
-        <section id="app">
-            <p>Carregando dados do backend...</p>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Plataforma Inteligente Impacto Jovem</h1>
+            <p>Nossa proposta é utilizar a Inteligência Artificial para transformar realidades, unindo análise preditiva de dados e atendimento automatizado em um só lugar.</p>
+        </section>
+
+        <section class="features-grid">
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Dashboard Analítico</h3>
+                <p>Visualização em tempo real de indicadores de performance, volumetria e métricas temporais para tomadas de decisão rápidas.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🤖</div>
+                <h3>Chatbot Inteligente</h3>
+                <p>Interface conversacional baseada em engenharia de prompts avançada para interagir, responder dúvidas e guiar os usuários de forma humanizada.</p>
+            </div>
         </section>
     </main>
-    <script>
-        // Consumindo a API do Backend
-        fetch('http://127.0.0')
-            .then(res => res.json())
-            .then(data => document.getElementById('app').innerText = data.status)
-            .catch(() => document.getElementById('app').innerText = "Erro ao conectar ao backend.");
-    </script>
+
+    <footer>
+        <p>&copy; 2026 Impacto Jovem. Desenvolvido para o CEEP Maringá.</p>
+    </footer>
 </body>
 </html>
