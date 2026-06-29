@@ -20,8 +20,8 @@
 
 <br>
 
-## 🚀 Sobre o Projeto
-O projeto **Impacto Jovem** é estruturado de forma independente entre camadas de **Backend** e **Frontend**. nosso objetivo é ajudar familiares ou o proprio uuario a sair das drogas os guiando para diminuir a dose e ajuar em momemntos de crise
+## 🚀 Sobre o Projetoa dose
+O projeto **Impacto Jovem** é estruturado de forma independente entre camadas de **Backend** e **Frontend**. nosso objetivo é ajudar familiares ou o proprio uuario a sair das drogas os guiando para não ter mais o vicio e ajudar em momemntos de crise
 ---
 
 ## 🛠️ Tecnologias Utilizadas
