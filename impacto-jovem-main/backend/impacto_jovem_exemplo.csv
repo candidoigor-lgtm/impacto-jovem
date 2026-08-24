@@ -1,6 +1,0 @@
-id,clinica,idade,sexo,droga_principal,tempo_vicio_anos,recaidas,frequencia_atendimento,desistencia,sucesso,empenho,risco_social
-1,Marev,22,Masculino,Maconha,3,1,8,0,1,9,Médio
-2,CRMC,35,Feminino,Crack,10,4,5,1,0,4,Alto
-3,Recomeço,29,Masculino,Álcool,6,2,9,0,1,8,Médio
-4,Vida Viva,41,Masculino,Cocaína,12,5,4,1,0,3,Alto
-5,Monte Sinai,19,Feminino,Maconha,1,0,10,0,1,10,Baixo
