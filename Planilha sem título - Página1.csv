@@ -1,4 +1,4 @@
-Entidade / Tela,Campo / Atributo,Tipo de Dado,Restrições,Regra de Negócio / Tratamento,Ciclo de Vida do Dado,,,,clinicas,acolhimento,total de buscas,desistencias,usuarios,avanço,entrada,saida,SUCESSO,empenho,vicio,drogas possiveis,drogas usada
+Entidade / Tela,Campo / Atributo,Tipo de Dado,Restrições,Regra de Negócio / Tratamento,Ciclo de Vida do Dado,,,,clinicas,acolhimento,total de buscas,desistencias,,avanço,entrada,saida,SUCESSO,empenho,vicio,drogas possiveis,drogas usada
 Usuário,id_usuario,Inteiro,"Chave primária (PK), Não nulo, Único",identificar do usuário sequencial e gerado no sistema,"Inserção (Create), Consulta (Read), Exclusão (Delete)",,,,marev,,,,,,,,,,,maconha,
 Usuário,data_nascimento,Data,Nulo,Armazena a data de nascimento informada pelo usuário,"Inserção (Create), Consulta (Read), Atualização (Update)",,,,moeiah,,,,,,,,,,,heroina,
 Usuário,data_cadastro,Data/Hora,Não nulo,Registra automaticamente a data e hora em que o usuário foi cadastrado,"Inserção (Create), Consulta (Read)",,,,CRMC,,,,,,,,,,,cocaina,
