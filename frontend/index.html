@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impacto Jovem - Home</title>
-    <link rel="stylesheet" href="../css/base.css">
+    <meta name="description" content="Impacto Jovem - Plataforma de apoio e informação.">
+    <title>Impacto Jovem - Início</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .hero-section { padding:55px 20px 35px; text-align:center; }
+        .hero-section h1 { margin-bottom:15px; }
+        .hero-section p { max-width:760px; margin:0 auto; line-height:1.7; }
+        .features-grid { margin-top:25px; }
+        .card { display:flex; flex-direction:column; align-items:center; }
+        .card-link { display:inline-block; margin-top:18px; padding:11px 20px; border-radius:9px; background:var(--secondary); color:var(--white); text-decoration:none; font-weight:600; }
+        .card-link:hover { background:var(--primary); }
+        .quick-title { text-align:center; margin:50px 0 20px; color:var(--primary); }
+        .quick-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+        .quick-item { background:var(--white); padding:22px; border-radius:12px; text-align:center; box-shadow:0 4px 15px rgba(106,13,173,.08); }
+        .quick-item a { color:var(--secondary); font-weight:700; text-decoration:none; }
+        .main-header { position:sticky; top:0; z-index:10; }
+        @media (max-width:650px) { .main-header { flex-direction:column; gap:12px; } .main-header nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; } .main-header nav a { margin-left:0; } }
+    </style>
 </head>
 <body>
     <header class="main-header">
         <div class="logo">🚀 Impacto Jovem</div>
-        <nav>
+        <nav aria-label="Menu principal">
             <a href="index.html" class="active">Início</a>
+            <a href="paginas/chatbot.html">Chatbot de Apoio</a>
+            <a href="paginas/chatbot-servicos.html">Serviços</a>
             <a href="sobre.html">Sobre a Equipe</a>
         </nav>
     </header>
@@ -18,26 +36,23 @@
     <main class="container">
         <section class="hero-section">
             <h1>Plataforma Inteligente Impacto Jovem</h1>
-            <p>Nossa proposta é utilizar a Inteligência Artificial para ajudar a familiares ou a propria pessoa a sair do vicio em drogas.</p>
+            <p>Uma plataforma criada para oferecer informação, orientação e acesso a serviços de acolhimento de forma simples e humanizada.</p>
         </section>
 
-        <section class="features-grid">
-            <div class="card">
-                <div class="card-icon">📊</div>
-                <h3>Dashboard Analítico</h3>
-                <p>Visualização em tempo real de indicadores de performance, volumetria e métricas temporais para tomadas de decisão rápidas.</p>
-            </div>
+        <section class="features-grid" aria-label="Principais recursos">
+            <article class="card"><div class="card-icon">🤖</div><h3>Chatbot de Apoio</h3><p>Converse com o assistente para tirar dúvidas e receber orientações gerais de forma acolhedora.</p><a class="card-link" href="paginas/chatbot.html">Abrir chatbot</a></article>
+            <article class="card"><div class="card-icon">🏥</div><h3>Chatbot de Serviços</h3><p>Consulte informações sobre serviços, atendimento, localização, horários e acolhimento.</p><a class="card-link" href="paginas/chatbot-servicos.html">Consultar serviços</a></article>
+            <article class="card"><div class="card-icon">📊</div><h3>Dados e Indicadores</h3><p>Organização de dados do projeto para apoiar a visualização e análise das informações.</p></article>
+        </section>
 
-            <div class="card">
-                <div class="card-icon">🤖</div>
-                <h3>Chatbot Inteligente</h3>
-                <p>Interface conversacional baseada em engenharia de prompts avançada para interagir, responder dúvidas e guiar os usuários de forma humanizada.</p>
-            </div>
+        <h2 class="quick-title">Acesso rápido</h2>
+        <section class="quick-grid">
+            <div class="quick-item"><span>💬</span><h3>Precisa conversar?</h3><a href="paginas/chatbot.html">Ir para o Chatbot de Apoio →</a></div>
+            <div class="quick-item"><span>📍</span><h3>Procura um serviço?</h3><a href="paginas/chatbot-servicos.html">Encontrar informações →</a></div>
+            <div class="quick-item"><span>👥</span><h3>Quer conhecer o projeto?</h3><a href="sobre.html">Conhecer a equipe →</a></div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Impacto Jovem. Desenvolvido para o CEEP Maringá.</p>
-        <link rel="stylesheet" href="style.css">
+    <footer><p>&copy; 2026 Impacto Jovem. Desenvolvido para o CEEP Maringá.</p></footer>
 </body>
 </html>
