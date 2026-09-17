@@ -1,6 +1,3 @@
-CREATE DATABASE sistema_saude;
-USE sistema_saude;
-
 CREATE TABLE Usuario (
     id_usuario INT PRIMARY KEY,
     data_nascimento DATE,
