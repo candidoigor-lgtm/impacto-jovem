@@ -1,0 +1,3 @@
+﻿id_clinica,nome,endereco,cidade,telefone,servicos,profissionais,vagas_disponiveis,data_entrada,previsao_saida,data_saida,status_atendimento
+CL001,Clínica Exemplo,"Rua Exemplo, 100",Curitiba,(41) 0000-0000,Acompanhamento e orientação,Profissionais cadastrados,Consultar disponibilidade,,,,ativo
+CL002,Centro de Atendimento Exemplo,"Av. Exemplo, 200",Curitiba,(41) 0000-0001,Orientação e encaminhamento,Profissionais cadastrados,Consultar disponibilidade,,,,ativo

@@ -1,0 +1,4 @@
+﻿id_usuario,tipo_usuario,idade_faixa,objetivo_atendimento,consentimento_dados
+001,familiar,18-24,informacao,sim
+002,recuperacao,25-34,acompanhamento,sim
+003,familiar,35-44,encaminhamento,sim
