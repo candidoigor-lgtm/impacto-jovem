@@ -43,12 +43,12 @@ Conheça os desenvolvedores que dão vida a este propósito:
 
 | Nome | Função / Atuação | GitHub |
 | :--- | :--- | :--- |
-| **DAVID** | | [@david](https://github.com) |
+| **DAVID** |apoio  emocional| [@david](https://github.com) |
 | **IGOR** | Desenvolvedor | [@candidoigor-lgtm](https://github.com/candidoigor-lgtm) |
 | **LETICIA** | a | [@leticia](https://github.com) |
 | **MAICOM** | | [@maicom](https://github.com) |
 | **MAJulia** |  | [@mariajulia](https://github.com) |
-| **GABRIEL TERRA** |  | [@gabrielterra](https://github.com) |
+| **GABRIEL TERRA** |mentiroso= Pinóquio  | [@gabrielterra](https://github.com) |
 | **ANA JULIA SILVA** |  | [@anajulia-silva](https://github.com) |
 | **ANA JULIA TEIXEIRA** | | [@anajulia-teixeira](https://github.com) |
 
