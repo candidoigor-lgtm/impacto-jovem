@@ -4,22 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impacto Jovem - Home</title>
+    <!-- CSS Externo (Se você usar) -->
     <link rel="stylesheet" href="../css/base.css">
+    
+    <style>
+        /* ==========================================================================
+           Variáveis de Cores e Estilos Globais
+           ========================================================================== */
+        :root {
+            --primary: #4B0082;         /* Roxo Escuro */
+            --secondary: #6A0DAD;       /* Roxo Principal */
+            --accent: #A855F7;          /* Lilás Vivo */
+            --dark: #1E1B4B;            /* Azul/Roxo Noturno */
+            --light: #F3E8FF;           /* Fundo Lilás bem claro */
+            --white: #FFFFFF;
+            --gray: #6B7280;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Reset básico e configurações padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Container centralizado para limitar a largura do conteúdo */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            flex: 1; /* Garante que o footer fique sempre no rodapé */
+        }
+
+        /* ==========================================================================
+           Cabeçalho (Header) e Navegação
+           ========================================================================== */
+        .main-header {
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .main-header nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .main-header nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 0;
+            transition: var(--transition-smooth);
+        }
+
+        .main-header nav a:hover {
+            color: var(--accent);
+        }
+
+        .main-header nav a.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* ==========================================================================
+           Seção Principal (Hero Section)
+           ========================================================================== */
+        .hero-section {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+
+        .hero-section h1 {
+            color: var(--primary);
+            font-size: 2.7rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .hero-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #4B5563; /* Tom cinza escuro para melhor legibilidade */
+        }
+
+        /* ==========================================================================
+           Grid de Recursos (Features Grid / Cards)
+           ========================================================================== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 35px 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(106, 13, 173, 0.08);
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(168, 85, 247, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(106, 13, 173, 0.18);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* ==========================================================================
+           Rodapé (Footer)
+           ========================================================================== */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 60px;
+            border-top: 1px solid rgba(106, 13, 173, 0.12);
+            background-color: rgba(255, 255, 255, 0.5); /* Leve fundo opaco */
+        }
+
+        /* ==========================================================================
+           Responsividade (Telas Menores)
+           ========================================================================== */
+        @media (max-width: 700px) {
+            .main-header {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .main-header nav {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 30px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header class="main-header">
         <div class="logo">🚀 Impacto Jovem</div>
         <nav>
             <a href="index.html" class="active">Início</a>
             <a href="sobre.html">Sobre a Equipe</a>
-                <a href="paginas/chatbot-servicos.html">Serviços</a>
-    </nav>
+            <a href="chatbot-servicos.html">Serviços</a>
+        </nav>
     </header>
 
     <main class="container">
         <section class="hero-section">
             <h1>Plataforma Inteligente Impacto Jovem</h1>
-            <p>Nossa proposta é utilizar a Inteligência Artificial para ajudar a familiares ou a propria pessoa a sair do vicio em drogas.</p>
+            <p>Nossa proposta é utilizar a Inteligência Artificial para ajudar familiares ou a própria pessoa a sair do vício em drogas.</p>
         </section>
 
         <section class="features-grid">
@@ -39,6 +243,7 @@
 
     <footer>
         <p>&copy; 2026 Impacto Jovem. Desenvolvido para o CEEP Maringá.</p>
-        <link rel="stylesheet" href="style.css">
+    </footer>
+
 </body>
 </html>
